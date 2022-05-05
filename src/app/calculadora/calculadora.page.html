@@ -1,5 +1,8 @@
 <ion-header>
   <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
     <ion-title>calculadora</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,25 +12,25 @@
     <ion-item>
       <ion-label>{{resultado}}</ion-label>
   </ion-item>
-    <ion-button color= "dark" size="large" shape="round" (click)="numero('7')">7</ion-button>
+    <ion-button color= "dark" size="large" shape="round" style="margin-left: 10%" (click)="numero('7')">7</ion-button>
 <ion-button color= "dark" size="large" shape="round" (click)="numero('8')">8</ion-button>
-<ion-button color= "dark" size="large" shape="round"(click)="numero('9')">9</ion-button>
-<ion-button color= "tertiary" size="large" shape="round"  (click)="operacionClick('X')">X</ion-button>
+<ion-button color= "dark" size="large" shape="round" (click)="numero('9')">9</ion-button>
+<ion-button color= "tertiary" size="large" shape="round" (click)="operacionClick('X')">X</ion-button>
   </div>
   <div>
-    <ion-button color= "dark" size="large" shape="round"(click)="numero('4')">4</ion-button>
+    <ion-button color= "dark" size="large" shape="round" style="margin-left: 10%" (click)="numero('4')">4</ion-button>
     <ion-button color= "dark" size="large" shape="round" (click)="numero('5')">5</ion-button>
     <ion-button color= "dark" size="large" shape="round" (click)="numero('6')">6</ion-button>
     <ion-button color= "tertiary" size="large" shape="round" (click)="operacionClick('-')">-</ion-button>
   </div>
   <div>
-    <ion-button color= "dark" size="large" shape="round" (click)="numero('3')">3</ion-button>
+    <ion-button color= "dark" size="large" shape="round" style="margin-left: 10%" (click)="numero('3')">3</ion-button>
     <ion-button color= "dark" size="large" shape="round" (click)="numero('2')">2</ion-button>
     <ion-button color= "dark" size="large" shape="round" (click) ="numero('1')">1</ion-button>
     <ion-button color= "tertiary" size="large" shape="round" (click)="operacionClick('+')">+</ion-button>
   </div>
   <div>
-    <ion-button color= "dark" size="large" shape="round" (click) ="numero('0')">0</ion-button>
+    <ion-button color= "dark" size="large" shape="round" style="margin-left: 10%" (click) ="numero('0')">0</ion-button>
 <ion-button color= "danger" size="large" shape="round"(click)="operacionClick('C')">C</ion-button>
 <ion-button color= "tertiary" size="large" shape="round"  (click)="operacionClick('/')">/</ion-button>
 <ion-button color= "success" size="large" shape="round"(click)="igual('=')">=</ion-button>

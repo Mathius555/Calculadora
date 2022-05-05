@@ -41,20 +41,31 @@ this.resultado= "0";
 }
 
 igual(n:string, o:string){
-  console.log("chi");
+  console.log("si");
+  console.log(this.num1);
+  console.log(this.resultado);
+  this.num2= this.resultado;
   if(this.operacion=='+'){
-    this.operacion=o;
-    this.resultado=n;
-  }else{this.resultado="0";}
-  this.resultado=this.resultado+n;
-}
+      
+    let resultadonum= Number(this.num1)+Number(this.num2);
+    console.log(resultadonum);
+    this.resultado = resultadonum.toString();
+  }else if(this.operacion=='-'){
+    let resultadonum= Number(this.num1)-Number(this.num2);
+    console.log(resultadonum);
+    this.resultado = resultadonum.toString();
+  }
+  else if(this.operacion=='X'){
+    let resultadonum= Number(this.num1) * Number(this.num2);
+    console.log(resultadonum);
+    this.resultado = resultadonum.toString();
   
 }
-
-
-
-
-
-
-
-
+else if(this.operacion=='/'){
+  let resultadonum= Number(this.num1) / Number(this.num2);
+  console.log(resultadonum);
+  this.resultado = resultadonum.toString();
+  
+}
+}
+}
