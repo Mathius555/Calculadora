@@ -37,7 +37,7 @@ if(this.resultado=="0"){
 operacionClick(o:string){
 this.num1=this.resultado;
 this.operacion=o;
-this.resultado= "0";
+this.resultado="0";
 }
 
 igual(n:string, o:string){
